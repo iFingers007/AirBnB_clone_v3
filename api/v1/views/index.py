@@ -11,6 +11,7 @@ from models.user import User
 
 app_views = Blueprint('app_views', __name__, url_prefix='/api/v1')
 
+
 @app_views.route('/stats', methods=['GET'], strict_slashes=False)
 def number_objects():
     """ Retrieves the number of each objects by type """
